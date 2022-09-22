@@ -10,22 +10,31 @@ First we need to create Wireguard Server on Nodegrid
   2 - Click on "Add"
 
   3 - Interface Name: wg0 // your wireguard server name on Zpe
+      
       Interface Type: Server
+      
       Status: Enabled
+      
       Internal Address: 172.16.160.1/24 // your wireguard server ip address
+      
       Listening Port: 9000 //Its a UDP Port
 
   4 - Click on Generate Keypair
+      
       Save the public key for client side, we will need it.
 
   5 - Click on save
+  
   <img width="898" alt="Ekran Resmi 2022-09-21 16 46 35" src="https://user-images.githubusercontent.com/103506681/191521011-92972563-f42a-449d-86aa-b1d8730d316b.png">
   
 Then we need to add peers for the wg0 server
   
   1 - Click on "Add"
+      
       Peer Name: $CLIENTNAME //yalin
+      
       Allowed IPs: $CLIENTIP //172.16.160.2
+      
       Public Key: $CLIENTPUBLICKEY //You need to get it from client's wireguard app.
   
   2 - Click on "Save"
