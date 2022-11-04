@@ -49,7 +49,7 @@ Then we need to add peers for the wg0 server
   
   4 - You should add some lines below the PrivateKey
       
-      ´´´
+      
       Address = 172.16.160.2/32
 
       [Peer]
@@ -57,7 +57,7 @@ Then we need to add peers for the wg0 server
       AllowedIPs = $SERVERIP //172.16.160.1/32
       Endpoint = $ZPE's_PUBLIC_IP:9000
       PersistentKeepalive = 25
-      ´´´
+      
 
 <img width="595" alt="Screen Shot 2022-09-21 at 17 02 04" src="https://user-images.githubusercontent.com/103506681/191525209-5c662140-b733-44ea-a7c5-27f0d4aa4c80.png">
 
